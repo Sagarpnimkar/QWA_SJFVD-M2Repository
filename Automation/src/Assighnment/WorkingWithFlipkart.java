@@ -25,23 +25,22 @@ public class WorkingWithFlipkart {
 			List<WebElement> allIphoneprice = driver.findElements(By.xpath("//div[@class='_4rR01T']"));
 			
 			List<WebElement> allIphone = driver.findElements(By.xpath("//div[@class='_30jeq3 _1_WHN1']"));
-			
-			for (WebElement Iphone:allIphone)
-				
-			{
-				System.out.println(Iphone.getText());
 				
 				
-				for(WebElement Price:allIphone);
-				{
-					
-					//System.out.println(Iphone.getText() ":" + Price.getText());
-				}
+				 for(int i=0;i<allIphoneprice.size();i++)
+    			 {
+    				 String name=allIphoneprice.get(i).getText();
+    				 for(int j=i;j<=i;j++)
+    				 {
+    					 String price=allIphone.get(j).getText();
+    					 
+    					 System.out.println(name+" : "+price);
+    				 }
 				
 			}
+	}}
 			
 			
-			
-	}
+	
 
-}
+
