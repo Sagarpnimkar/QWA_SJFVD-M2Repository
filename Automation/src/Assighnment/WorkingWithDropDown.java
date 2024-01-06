@@ -24,8 +24,6 @@ public class WorkingWithDropDown {
 	      
 	      Select s=new Select(dropDown);
 	      
-	     // s.selectByIndex(7);
-	      
 	      for (int i=0; i<9; i++)
 	    		  
 	    		  {

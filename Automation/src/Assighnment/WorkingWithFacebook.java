@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
     	public class WorkingWithFacebook {
 
-    		public static void main(String[] args) {
+    		public static void main(String[] args) throws InterruptedException {
     			
     			WebDriver driver = new ChromeDriver();
     			
@@ -52,13 +52,11 @@ import org.openqa.selenium.support.ui.Select;
     			
     		    WebElement checkbox = 	driver.findElement(By.xpath("(//label[@class='_58mt'])[2]"));
     		
-    		     checkbox.click();
+    		    checkbox.click();
+    		    
+    		    Thread.sleep(2000);
     		     
-    		    driver.findElement(By.id("u_2_s_CN")).click();
-    		  
-    			
-    		
-
+    		    driver.findElement(By.xpath("//button[@id='u_2_s_Ox']")).click();
 	}
 
 }
