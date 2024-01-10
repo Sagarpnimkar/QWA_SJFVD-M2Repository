@@ -37,9 +37,10 @@ public class EliminateDuplicatevalue {
 			set.add(allOption);
 		}
 		for(String option:set)
-		
+		{
 			System.out.println(option);
 		}
 	}
+}
 
 
