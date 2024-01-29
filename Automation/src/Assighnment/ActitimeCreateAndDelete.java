@@ -1,22 +1,17 @@
 package Assighnment;
 
 import java.time.Duration;
-import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class WorkingWithActiTimeM {
+public class ActitimeCreateAndDelete {
 	
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) {
 		
-		Random r=new Random();
-		
-		int num=r.nextInt(100);
-		
-		WebDriver driver=new ChromeDriver();
+        WebDriver driver=new ChromeDriver();
 		
 		driver.manage().window().maximize();
 		
@@ -38,7 +33,7 @@ public class WorkingWithActiTimeM {
 	    
 	    driver.findElement(By.xpath("//input[@value='Create New User']")).click();
 	    
-	    driver.findElement(By.xpath("//input[@name='username']")).sendKeys("Sagarnimkar1@gmail5.com"+num);
+	    driver.findElement(By.xpath("//input[@name='username']")).sendKeys("Sagarnimkar1@gmail5.com");
 	    
 	    driver.findElement(By.xpath("//input[@name='firstName']")).sendKeys("Sagar");
 	    
@@ -54,12 +49,7 @@ public class WorkingWithActiTimeM {
 	    
 	    driver.findElement(By.xpath("//input[@type='submit']")).click();
 	    
-	    Thread.sleep(2000);
-	    
-	  // driver.quit();
-		
-		
-		
+	    driver.findElement(By.xpath(""));
 	}
 
 }
